@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Frontend API studies</h1>
+
+      <form>
+        <div class="input-group mb-3 w-50">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input
+          type="text"
+          class="form-control"
+          id="gitHubUser"
+          placeholder="Username"
+          />
+          <button class="btn btn-dark" id="repoSearch">
+            Fetch User Repositories
+          </button>
+        </div>
+      </form>
+
+      <ul class="list-group" id="gitHubUserList"></ul>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
